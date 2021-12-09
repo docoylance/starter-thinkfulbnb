@@ -65,8 +65,8 @@ header nav {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
   color: #fff;
+  font-size: 15vw;
 }
 
 header nav ul {
@@ -92,6 +92,7 @@ form {
 }
 form div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -113,7 +114,7 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 15px;
-  width: 100%;
+  flex: 1;
 }
 
 /* -------  Footer ------- */
@@ -142,8 +143,7 @@ footer p {
 
   .logo {
     margin: 14px 0;
-    padding-top: 0;
-    font-size: 50px;
+    font-size: 50px
   }
 
   header nav {
@@ -161,16 +161,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  form div {
-    display: flex;
-    flex-direction: column;
-    padding-top: 18px;
-  }
-
-  form button {
-    width: 200px;
   }
 
   /* ---  Groups & Items --- */
@@ -191,7 +181,9 @@ footer p {
   }
 
   .grid {
-    flex-basis: calc(50% - 40px);  
+    flex: calc(50% - 40px);  
     margin: 20px;
   }
+
+  
 }
